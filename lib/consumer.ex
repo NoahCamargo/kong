@@ -37,4 +37,9 @@ defmodule Kong.Consumer do
   Add Credentials
   """
   def add_credentials(username_or_id, plugin, attributes \\ %{}), do: post(@endpoint <> "/#{username_or_id}/#{plugin}", attributes)
+
+  @doc """
+  Add Credentials
+  """
+  def get_credentials(username_or_id, plugin), do: get(@endpoint <> "/#{username_or_id}/#{plugin}")
 end

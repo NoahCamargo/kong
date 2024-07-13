@@ -22,10 +22,10 @@ defmodule Kong.Mixfile do
 
   defp deps do
     [
-      {:ex_doc, "~> 0.14", only: :dev, runtime: false},
-      {:credo, "~> 0.7.4", only: [:dev, :test]},
-      {:httpoison, "~> 0.11.1"},
-      {:poison, "~> 3.0"}
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:credo, "~> 1.7.7", only: [:dev, :test]},
+      {:httpoison, "~> 2.2.1"},
+      {:poison, "~> 6.0.0"}
     ]
   end
 
