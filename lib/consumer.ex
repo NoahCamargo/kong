@@ -11,7 +11,7 @@ defmodule Kong.Consumer do
   @doc """
   Retrieve Consumer
   """
-  def retreive(username_or_id), do: get(@endpoint <> "/#{username_or_id}")
+  def retrieve(username_or_id), do: get(@endpoint <> "/#{username_or_id}")
 
   @doc """
   List Consumers
